@@ -1,4 +1,4 @@
-import { User } from "../userList/UserList";
+import { User } from "@/pages";
 import styles from "./userCard.module.scss";
 
 interface UserCard {
