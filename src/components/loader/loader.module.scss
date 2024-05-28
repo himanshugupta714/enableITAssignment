@@ -2,17 +2,22 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 40dvh;
+   height: 100vh;
+
+   @media (min-width: 768px) {
+      height: 70vh;
+   }
+
+   .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: #09f;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      animation: spin 1s linear infinite;
+   }
 }
 
-.spinner {
-   border: 4px solid rgba(0, 0, 0, 0.1);
-   border-left-color: #09f;
-   border-radius: 50%;
-   width: 36px;
-   height: 36px;
-   animation: spin 1s linear infinite;
-}
 
 @keyframes spin {
    to {
