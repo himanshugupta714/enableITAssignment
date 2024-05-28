@@ -1,0 +1,27 @@
+.root {
+   display: grid;
+   grid-template-columns: repeat(minmax(320px, 1fr));
+   gap: 16px;
+   padding: 16px;
+
+   @media (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   }
+}
+
+.cardContainer {
+   background-color: #231E39;
+   border-radius: 15px;
+   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
+   color: #fff;
+   padding: 20px;
+   max-width: 100%;
+   text-align: center;
+   transition: transform 0.2s ease-in-out;
+   font-size: 14px;
+
+   &:hover {
+      transform: translateY(-5px);
+   }
+
+}
